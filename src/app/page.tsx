@@ -4,15 +4,15 @@ import ThemeToggle from "@/components/ThemeToggle";
 
 // TODO: 더미 값 — 실제 내용은 나중에 교체 (추후 MongoDB 연동 시 DB에서 불러오기)
 const profile = {
-  name: "허슨가이",
+  name: "홍길동",
   bio: "AI많이 살길이다.",
   imageUrl: "/avatar.svg", // 더미 사진 (public/avatar.svg)
 };
 
 const links = [
-  { url: "https://github.com" },
-  { url: "https://linkedin.com" },
-  { url: "https://example.com/blog" },
+  { title: "GitHub", url: "https://github.com", description: "코드와 프로젝트" },
+  { title: "LinkedIn", url: "https://linkedin.com", description: "경력과 네트워크" },
+  { title: "Blog", url: "https://example.com/blog", description: "개발 이야기" },
 ];
 
 export default function Home() {
