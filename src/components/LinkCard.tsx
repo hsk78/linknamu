@@ -23,7 +23,7 @@ export default function LinkCard({ title, url, description }: Props) {
       target="_blank"
       rel="noopener noreferrer"
       onClick={trackClick}
-      className="block rounded-2xl border border-stone-200 bg-white px-5 py-4 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-md dark:border-stone-700 dark:bg-stone-900"
+      className="block rounded-3xl border border-white/60 bg-white/40 px-6 py-4 text-center shadow-[0_8px_24px_-12px_rgba(120,70,30,0.25)] backdrop-blur-xl transition duration-200 hover:bg-white/60 hover:shadow-[0_10px_28px_-12px_rgba(120,70,30,0.3)] dark:border-white/10 dark:bg-white/5 dark:shadow-none dark:hover:bg-white/10"
     >
       <span className="block font-semibold">{title}</span>
       {description && (

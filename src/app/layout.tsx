@@ -24,9 +24,13 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+        />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="min-h-screen bg-stone-50 text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100">
+      <body className="min-h-screen bg-gradient-to-br from-[#fdf8ef] via-[#fcefe0] to-[#f9dcc4] bg-fixed text-stone-800 antialiased dark:from-[#1c1714] dark:via-[#241b17] dark:to-[#2e211a] dark:text-stone-100">
         {children}
       </body>
     </html>

@@ -4,29 +4,28 @@ import ThemeToggle from "@/components/ThemeToggle";
 
 // TODO: 더미 값 — 실제 내용은 나중에 교체 (추후 MongoDB 연동 시 DB에서 불러오기)
 const profile = {
-  name: "홍길동",
-  bio: "AI많이 살길이다.",
-  imageUrl: "/avatar.svg", // 더미 사진 (public/avatar.svg)
+  name: "허슨가이",
+  bio: "풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요",
+  imageUrl: "/profile.jpg",
 };
 
 const links = [
-  { title: "GitHub", url: "https://github.com", description: "코드와 프로젝트" },
-  { title: "LinkedIn", url: "https://linkedin.com", description: "경력과 네트워크" },
-  { title: "Blog", url: "https://example.com/blog", description: "개발 이야기" },
+  { title: "🐙 깃허브", url: "https://github.com/hsk78" },
+  { title: "✍️ 블로그", url: "https://blog.naver.com/dhrmadl" },
+  { title: "📬 이메일", url: "mailto:hsk78@outlook.kr" },
 ];
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center px-4 py-8">
-      {/* 와이어프레임: 둥근 테두리 프레임 안에 원형 사진 → 이름 → 소개 → 링크 카드 3개 */}
-      <div className="relative flex min-h-[640px] w-full max-w-sm flex-col items-center rounded-3xl border-2 border-stone-800 bg-white px-8 pb-12 pt-14 dark:border-stone-300 dark:bg-stone-900">
+    <main className="flex min-h-screen items-center justify-center px-6 py-16">
+      <div className="flex w-full max-w-sm flex-col items-center">
         <ThemeToggle />
         <ProfileHeader
           name={profile.name}
           bio={profile.bio}
           imageUrl={profile.imageUrl}
         />
-        <section aria-label="링크 목록" className="mt-12 flex w-full flex-col gap-7">
+        <section aria-label="링크 목록" className="mt-12 flex w-full flex-col gap-4">
           {links.map((link) => (
             <LinkCard key={link.url} {...link} />
           ))}
