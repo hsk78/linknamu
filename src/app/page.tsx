@@ -6,7 +6,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 const profile = {
   name: "허슨가이",
   bio: "풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요",
-  imageUrl: "/profile.jpg",
+  imageUrl: "/profile2.jpg",
 };
 
 const links = [
