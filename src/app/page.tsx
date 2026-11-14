@@ -1,4 +1,4 @@
-import LinkCard from "@/components/LinkCard";
+import LinkList from "@/components/LinkList";
 import ProfileHeader from "@/components/ProfileHeader";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -26,9 +26,7 @@ export default function Home() {
           imageUrl={profile.imageUrl}
         />
         <section aria-label="링크 목록" className="mt-12 flex w-full flex-col gap-4">
-          {links.map((link) => (
-            <LinkCard key={link.url} {...link} />
-          ))}
+          <LinkList links={links} />
         </section>
       </div>
     </main>
